@@ -69,7 +69,22 @@
   <div class="container">
     <h1>The Little Kingdom Hall Made Out of Watermelons</h1>
 
-    <div class="pdf-viewer">
+    
+    <div class="pdf-viewer" id="pdfViewer">
+      <iframe src="The-Little-Kingdom-Hall-Made-Out-of-Watermelons.pdf" type="application/pdf"></iframe><br>
+      <a class="button" href="The-Little-Kingdom-Hall-Made-Out-of-Watermelons.pdf" download>Download the Book (PDF)</a>
+    </div>
+    <div id="iosNotice" style="display:none;">
+      <a class="button" href="The-Little-Kingdom-Hall-Made-Out-of-Watermelons.pdf" target="_blank">📖 Tap to Open the Book (PDF)</a>
+    </div>
+    <script>
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (isIOS) {{
+        document.getElementById('pdfViewer').style.display = 'none';
+        document.getElementById('iosNotice').style.display = 'block';
+      }}
+    </script>
+    
       <iframe src="The-Little-Kingdom-Hall-Made-Out-of-Watermelons.pdf" type="application/pdf"></iframe><br>
       <a class="button" href="The-Little-Kingdom-Hall-Made-Out-of-Watermelons.pdf" download>Download the Book (PDF)</a>
     </div>
