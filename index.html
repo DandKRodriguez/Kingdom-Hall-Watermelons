@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Little Kingdom Hall Made Out of Watermelons</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e1f7e7;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-image: url('IMG_3372.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #d02b2b;
+    }
+    .button {
+      display: inline-block;
+      background: #f5a623;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
+    audio {
+      margin-top: 20px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 8px auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      display: block;
+    }
+    .submit-button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Little Kingdom Hall Made Out of Watermelons</h1>
+
+    <div class="pdf-viewer">
+      <iframe src="little_kingdom_hall_final_corrected_page13.pdf" type="application/pdf"></iframe><br>
+      <a class="button" href="little_kingdom_hall_final_corrected_page13.pdf" download>Download the Book (PDF)</a>
+    </div>
+
+    <div>
+      <h3>🎵 Listen to the Song</h3>
+      <audio controls>
+        <source src="family_tree_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      <a class="button" href="family_tree_song.mp3" download>Download the Song (MP3)</a>
+    </div>
+
+    <div class="comment-section">
+      <h3>💬 Leave a Comment or Review</h3>
+      <form action="https://formspree.io/f/meozaaqv" method="POST">
+        <input type="text" name="name" placeholder="Your name (optional)">
+        <textarea name="message" rows="4" placeholder="Your comment or review..." required></textarea>
+        <input type="submit" value="Send" class="submit-button">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
